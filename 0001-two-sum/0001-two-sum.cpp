@@ -5,14 +5,18 @@ public:
 
         
 
-        for(int i  =0;i<n;i++){
-            for(int j = i+1;j<n;j++){
-                if(nums[i] + nums[j] == target){
-                    return {i,j};
-                } 
+        unordered_map<int,int>mpp;
+
+        for(int i =0;i<n;i++){
+            int x = target - nums[i];
+
+            if(mpp.find(x) != mpp.end()){
+                return {mpp[x],i};
             }
 
+            mpp[nums[i]] = i;
         }
+
         return {};
         
     }
