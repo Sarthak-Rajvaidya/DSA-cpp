@@ -2,47 +2,35 @@ class Solution {
 public:
     vector<int> topKFrequent(vector<int>& nums, int k) {
 
-        unordered_set<int> used;
-        vector<pair<int, int>> freqList;
+        int n = nums.size();
 
-        for(int i = 0; i < nums.size(); i++) {
+        unordered_map<int,int>freq;
 
-            if(used.count(nums[i])) {
-                continue;
-            }
+        for(int i = 0;i<n;i++){
+            freq[nums[i]]++;
+        }
 
-            int count = 0;
+        vector<vector<int>>buckets(n+1);
 
-            for(int j = 0; j < nums.size(); j++) {
-                if(nums[j] == nums[i]) {
-                    count++;
+        for (auto x : freq){
+            int num = x.first;
+            int count = x.second;
+
+            buckets[count].push_back(num);
+
+        }
+
+        vector<int>ans;
+        for(int i = n;i>=1;i--){
+            for(int num : buckets[i]){
+                ans.push_back(num);
+
+                if(ans.size() == k){
+                    return ans;
                 }
             }
 
-            freqList.push_back({nums[i], count});
-            used.insert(nums[i]);
         }
-
-        vector<int> ans;
-
-        for(int i = 0; i < k; i++) {
-
-            int maxFreq = -1;
-            int maxIndex = -1;
-
-            for(int j = 0; j < freqList.size(); j++) {
-
-                if(freqList[j].second > maxFreq) {
-                    maxFreq = freqList[j].second;
-                    maxIndex = j;
-                }
-            }
-
-            ans.push_back(freqList[maxIndex].first);
-
-            freqList[maxIndex].second = -1;
-        }
-
         return ans;
     }
 };
