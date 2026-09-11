@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0128-longest-consecutive-sequence](https://github.com/Sarthak-Rajvaidya/DSA-cpp/tree/master/0128-longest-consecutive-sequence) |
 | [0152-maximum-product-subarray](https://github.com/Sarthak-Rajvaidya/DSA-cpp/tree/master/0152-maximum-product-subarray) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Sarthak-Rajvaidya/DSA-cpp/tree/master/0153-find-minimum-in-rotated-sorted-array) |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/Sarthak-Rajvaidya/DSA-cpp/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0217-contains-duplicate](https://github.com/Sarthak-Rajvaidya/DSA-cpp/tree/master/0217-contains-duplicate) |
 | [0219-contains-duplicate-ii](https://github.com/Sarthak-Rajvaidya/DSA-cpp/tree/master/0219-contains-duplicate-ii) |
 | [0238-product-of-array-except-self](https://github.com/Sarthak-Rajvaidya/DSA-cpp/tree/master/0238-product-of-array-except-self) |
@@ -67,11 +68,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0033-search-in-rotated-sorted-array](https://github.com/Sarthak-Rajvaidya/DSA-cpp/tree/master/0033-search-in-rotated-sorted-array) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Sarthak-Rajvaidya/DSA-cpp/tree/master/0153-find-minimum-in-rotated-sorted-array) |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/Sarthak-Rajvaidya/DSA-cpp/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 ## Two Pointers
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/Sarthak-Rajvaidya/DSA-cpp/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/Sarthak-Rajvaidya/DSA-cpp/tree/master/0015-3sum) |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/Sarthak-Rajvaidya/DSA-cpp/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 ## Quicksort
 |  |
 | ------- |
