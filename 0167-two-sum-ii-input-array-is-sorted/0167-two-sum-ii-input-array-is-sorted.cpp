@@ -3,23 +3,18 @@ public:
     vector<int> twoSum(vector<int>& nums, int target) {
         int n= nums.size();
 
-        int left = 0;
-        int right = n-1;
-        
-        while(left<right){
-            int sum = nums[left]+nums[right];
+       unordered_map<int,int>mpp;
 
-            if(sum == target){
-                return {left+1,right+1};
-            }
-            else if(sum<target){
-                left++;
-            }
-            else{
-                right--;
-            }
+       for(int i =0;i<n;i++){
+        int needed = target-nums[i];
+        if(mpp.find(needed)!=mpp.end()){
+            return {mpp[needed]+1,i+1};
         }
-        return {-1,-1};
+        mpp[nums[i]] = i;
+        
+       }
+       return {-1,-1};
+
         
     }
 };
